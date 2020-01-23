@@ -43,7 +43,7 @@ export default class Homepage extends React.Component {
                     <Col xs="12">
                         <div className="slideshow">
                             <div className="white-stripe">
-                                <Col xs="2"></Col>
+                                <Col xs="2"/>
                                 <Col xs="4" className="slideshow-description">
                                     <h4 className="pre-title">Um jogo</h4>
                                     <h1 className="title">sportacular</h1>
@@ -52,19 +52,22 @@ export default class Homepage extends React.Component {
                                     Acreditamos na promoção do DESPORTO e ATIVIDADE FÍSICA através de Jogos de Tabuleiro.  <br/>
                                     Vais ter de te mexer. Mesmo!
                                     </span>
+
+                                    <a href="http://www.majora.pt/sporttable" className="btn" target="_blank" rel="noopener noreferrer">Comprar</a>
+
                                 </Col>
                                 <Col xs="4">
                                     <img className="slideshow-img" alt="Sporttable box" src={logo} />
                                 </Col>
-                                <Col xs="2"></Col>
+                                <Col xs="2"/>
                             </div>
                         </div>
                     </Col>
                 </Row>
 
-                <Row className="containerError">
+                <Row>
 
-                    <Col xs="2"></Col>
+                    <Col xs="2"/>
 
                     <Col xs="8">
 
@@ -74,13 +77,11 @@ export default class Homepage extends React.Component {
 
                     </Col>
 
-                    <Col xs="2"></Col>
+                    <Col xs="2"/>
 
                 </Row>
 
-            </Container>
-
-                        );
+            </Container> );
 
     }
 }

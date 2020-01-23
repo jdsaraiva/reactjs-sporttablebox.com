@@ -45,6 +45,10 @@ body {
   transition: opacity 0.24s ease-in-out;
 }
 
+.wp-block-column {
+  text-align:left;
+}
+
 .full-with-bg {
   background: rgba(54,63,77,0.1) !important;
   width: 100%;
@@ -93,7 +97,17 @@ h2.has-text-align-center {
 }
 
 span.description {
+  display:flex;
   font-size: 12px;
+}
+
+a.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  background: rgba(255,255,255,.5);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 30px;
 }
 
 .slideshow-img {
@@ -110,6 +124,11 @@ strong {
 
 #root > div > div.container > div:nth-child(2) > div:nth-child(5) > div:nth-child(1) > ul {
   text-align:left;
+}
+
+figure.wp-block-embed-youtube {
+  display: flex;
+  overflow: auto;
 }
 
 .white-stripe {
@@ -174,3 +193,4 @@ strong {
   margin-top: 50px;
   color: gray;
 }
+

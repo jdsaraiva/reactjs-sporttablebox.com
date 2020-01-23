@@ -8,6 +8,7 @@ import Tutorial from './Tutorial';
 import Imprensa from './Imprensa';
 import Contactos from './Contactos';
 import PageNotFound from "./common/PageNotFound";
+import Footer from "./common/Footer";
 
 const App: React.FC = () => {
   return (
@@ -15,11 +16,12 @@ const App: React.FC = () => {
         <Header/>
         <Switch>
             <Route exact path ="/" component={Homepage} />
-            <Route exact path ="/Tutorial" component={Tutorial} />
-            <Route exact path ="/Imprensa" component={Imprensa} />
-            <Route exact path ="/Contactos" component={Contactos} />
+            <Route path ="/Tutorial" component={Tutorial} />
+            <Route path ="/Imprensa" component={Imprensa} />
+            <Route path ="/Contactos" component={Contactos} />
             <Route component={PageNotFound} />
         </Switch>
+        <Footer/>
       </div>
   );
 }
