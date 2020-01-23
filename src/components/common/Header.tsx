@@ -1,27 +1,26 @@
 import React from 'react'
 import {NavLink} from "react-router-dom";
 import {Col, Container, Row} from "reactstrap";
+import './WordPress.min.css';
 
 const Header = () => {
 
-    const activeStyle = { color : "#c5151d"}
-
     return (
-        <Container fluid="true">
+        <Container fluid="true" className="header-container">
 
             <Row className="header">
 
-                <Col xs="12" md="8" xl="5" >
+                <Col >
 
-                    <nav className="navigation">
+                    <nav className="navigation" >
 
-                        <NavLink to="/categorias" activeStyle={activeStyle} >Categorias</NavLink>
+                        <NavLink to="/categorias">Categorias</NavLink>
 
-                        <NavLink to="/salas" activeStyle={activeStyle}>Sala</NavLink>
+                        <NavLink to="/salas">Sala</NavLink>
 
-                        <NavLink to="/agenda" activeStyle={activeStyle}>Agenda</NavLink>
+                        <NavLink to="/agenda">Agenda</NavLink>
 
-                        <NavLink to="/tlmagazine" activeStyle={activeStyle}>TL Magazine</NavLink>
+                        <NavLink to="/tlmagazine">TL Magazine</NavLink>
 
                     </nav>
 

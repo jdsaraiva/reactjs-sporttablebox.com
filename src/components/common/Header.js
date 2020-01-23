@@ -12,7 +12,7 @@ const Header = () => {
 
             <Row className="header">
 
-                <Col xs="12" md="8" xl="5" >
+                <Col xs="12" md={{ size: 8, offset: 2 }} >
 
                     <nav className="navigation">
 
