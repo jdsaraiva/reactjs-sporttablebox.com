@@ -4,7 +4,7 @@ import {Col, Container, Row} from "reactstrap";
 
 const Header = () => {
 
-    const activeStyle = { color : "#c5151d"}
+    const activeStyle = { color : "#c5151d"};
 
     return (
 
@@ -16,7 +16,7 @@ const Header = () => {
 
                     <nav className="navigation">
 
-                        <NavLink to="/" activeStyle={activeStyle} >SportTable BOX</NavLink>
+                        <NavLink exact to="/" activeStyle={activeStyle} >SportTable BOX</NavLink>
 
                         <NavLink to="/tutorial" activeStyle={activeStyle}>Como jogar</NavLink>
 
@@ -34,6 +34,6 @@ const Header = () => {
 
     )
 
-}
+};
 
 export default Header;

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Col, Container, Row} from "reactstrap";
 
-const Footer = () => {
+const Footer = (response) => {
 
     return (
 
@@ -11,7 +11,7 @@ const Footer = () => {
 
                 <Col xs="12" md={{ size: 8, offset: 2 }} >
 
-                    <p>Página criada e desenvolvida por <a href="mailto:joaodsaraiva@gmail.com">João Dessain Saraiva</a></p>
+                    <p>Website criado e desenvolvido por <a href="mailto:joaodsaraiva@gmail.com">João Dessain Saraiva</a></p>
 
                 </Col>
 
