@@ -7,10 +7,9 @@ import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-//ReactDOM.render(<App />, document.getElementById('root'));
-
+// Since the project is inside a sub-folder we need the basename attribute
 ReactDOM.render(
-    <Router>
+    <Router basename='/reactjs-beta/'>
         <App/>
     </Router>
     , document.getElementById('root')
